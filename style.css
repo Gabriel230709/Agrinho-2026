@@ -1,0 +1,95 @@
+/* Configurações Globais */
+:root {
+    --verde-principal: #2d5a27;   /* Verde Floresta */
+    --verde-claro: #4caf50;       /* Verde Grama */
+    --creme-fundo: #f9fbf9;       /* Branco com leve toque verde */
+    --texto-escuro: #333333;
+    --detalhe-terra: #8b4513;     /* Marrom para detalhes */
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--creme-fundo);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+/* Navegação */
+.navbar {
+    background-color: var(--verde-principal) !important;
+    border-bottom: 4px solid var(--verde-claro);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Seção Hero (Destaque) */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efeito Parallax suave */
+    color: white;
+    padding: 120px 0;
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Cards de Ferramentas */
+.card-agro {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: white;
+    overflow: hidden;
+}
+
+.card-agro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-agro h3 {
+    color: var(--verde-principal);
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: var(--verde-principal);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.btn-success:hover {
+    background-color: var(--verde-claro);
+}
+
+.btn-outline-success {
+    color: var(--verde-principal);
+    border-color: var(--verde-principal);
+    border-radius: 50px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1a1a1a;
+    color: #999;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries para Celular */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+}
+<link rel="stylesheet" href="style.css">
