@@ -38,5 +38,3 @@ const btnCalculadora = document.querySelectorAll('.btn-outline-success')[0];
 if (btnCalculadora) {
     btnCalculadora.addEventListener('click', calcularInsumos);
 }
-<script src="script.js"></script>
-</body>
